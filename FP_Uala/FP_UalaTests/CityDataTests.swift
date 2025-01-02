@@ -6,18 +6,7 @@
 //
 
 import XCTest
-
-struct City: Codable {
-    let country: String
-    let name: String
-    let _id: Int
-    let coord: Coordinates
-}
-
-struct Coordinates: Codable {
-    let lon: Double
-    let lat: Double
-}
+@testable import FP_Uala
 
 final class CityDataTests: XCTestCase {
     func test_getCities_returnSuccess() async throws {
@@ -41,12 +30,12 @@ final class CityDataTests: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeSUT(url: String) -> CityData {
+    private func makeSUT(url: String) -> CityDataAPI {
         let config = URLSessionConfiguration.ephemeral
         config.protocolClasses = [URLSessionMock.self]
         let mockSession = URLSession(configuration: config)
         
-        return CityData(session: mockSession, citiesURL: url)
+        return CityDataAPI(session: mockSession, citiesURL: url)
     }
     
     private func makeCitiesURL() -> String {

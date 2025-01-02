@@ -13,6 +13,7 @@
 		76255D342D26F231006A4BB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76255D332D26F231006A4BB4 /* Preview Assets.xcassets */; };
 		76255D572D26FCE0006A4BB4 /* CityDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D562D26FCE0006A4BB4 /* CityDataTests.swift */; };
 		76255D5A2D27083A006A4BB4 /* CityDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D592D27083A006A4BB4 /* CityDataAPI.swift */; };
+		76255D5D2D2708A1006A4BB4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D5C2D2708A1006A4BB4 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		76255D432D26F231006A4BB4 /* FP_UalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FP_UalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76255D562D26FCE0006A4BB4 /* CityDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataTests.swift; sourceTree = "<group>"; };
 		76255D592D27083A006A4BB4 /* CityDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataAPI.swift; sourceTree = "<group>"; };
+		76255D5C2D2708A1006A4BB4 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		76255D2B2D26F230006A4BB4 /* FP_Uala */ = {
 			isa = PBXGroup;
 			children = (
+				76255D5B2D27088D006A4BB4 /* Models */,
 				76255D582D27081D006A4BB4 /* Services */,
 				76255D2C2D26F230006A4BB4 /* FP_UalaApp.swift */,
 				76255D2E2D26F230006A4BB4 /* ContentView.swift */,
@@ -130,6 +133,14 @@
 				76255D592D27083A006A4BB4 /* CityDataAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		76255D5B2D27088D006A4BB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76255D5C2D2708A1006A4BB4 /* City.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			files = (
 				76255D5A2D27083A006A4BB4 /* CityDataAPI.swift in Sources */,
 				76255D2F2D26F230006A4BB4 /* ContentView.swift in Sources */,
+				76255D5D2D2708A1006A4BB4 /* City.swift in Sources */,
 				76255D2D2D26F230006A4BB4 /* FP_UalaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
