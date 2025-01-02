@@ -37,7 +37,7 @@ class CityDataAPI {
             
             let cities = try JSONDecoder().decode([City].self, from: data)
             
-            return cities
+            return Array(cities.prefix(10))
             
         } catch let error{
             throw error

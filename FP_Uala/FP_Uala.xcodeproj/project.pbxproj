@@ -15,6 +15,7 @@
 		76255D5A2D27083A006A4BB4 /* CityDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D592D27083A006A4BB4 /* CityDataAPI.swift */; };
 		76255D5D2D2708A1006A4BB4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D5C2D2708A1006A4BB4 /* City.swift */; };
 		76255D602D270A52006A4BB4 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D5F2D270A52006A4BB4 /* URLSessionMock.swift */; };
+		76535C0D2D271C330044E0FE /* CitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76535C0C2D271C330044E0FE /* CitiesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		76255D592D27083A006A4BB4 /* CityDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataAPI.swift; sourceTree = "<group>"; };
 		76255D5C2D2708A1006A4BB4 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		76255D5F2D270A52006A4BB4 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		76535C0C2D271C330044E0FE /* CitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +98,11 @@
 		76255D2B2D26F230006A4BB4 /* FP_Uala */ = {
 			isa = PBXGroup;
 			children = (
+				76535C0B2D271C270044E0FE /* ViewModels */,
+				76535C0A2D2713760044E0FE /* Main */,
+				76535C092D2713610044E0FE /* Views */,
 				76255D5B2D27088D006A4BB4 /* Models */,
 				76255D582D27081D006A4BB4 /* Services */,
-				76255D2C2D26F230006A4BB4 /* FP_UalaApp.swift */,
-				76255D2E2D26F230006A4BB4 /* ContentView.swift */,
-				76255D302D26F231006A4BB4 /* Assets.xcassets */,
 				76255D322D26F231006A4BB4 /* Preview Content */,
 			);
 			path = FP_Uala;
@@ -152,6 +154,31 @@
 				76255D5F2D270A52006A4BB4 /* URLSessionMock.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		76535C092D2713610044E0FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76255D2E2D26F230006A4BB4 /* ContentView.swift */,
+				76255D302D26F231006A4BB4 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76535C0A2D2713760044E0FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				76255D2C2D26F230006A4BB4 /* FP_UalaApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		76535C0B2D271C270044E0FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76535C0C2D271C330044E0FE /* CitiesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +316,7 @@
 				76255D2F2D26F230006A4BB4 /* ContentView.swift in Sources */,
 				76255D5D2D2708A1006A4BB4 /* City.swift in Sources */,
 				76255D2D2D26F230006A4BB4 /* FP_UalaApp.swift in Sources */,
+				76535C0D2D271C330044E0FE /* CitiesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
