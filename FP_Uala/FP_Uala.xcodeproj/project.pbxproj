@@ -14,6 +14,7 @@
 		76255D572D26FCE0006A4BB4 /* CityDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D562D26FCE0006A4BB4 /* CityDataTests.swift */; };
 		76255D5A2D27083A006A4BB4 /* CityDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D592D27083A006A4BB4 /* CityDataAPI.swift */; };
 		76255D5D2D2708A1006A4BB4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D5C2D2708A1006A4BB4 /* City.swift */; };
+		76255D602D270A52006A4BB4 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D5F2D270A52006A4BB4 /* URLSessionMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		76255D562D26FCE0006A4BB4 /* CityDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataTests.swift; sourceTree = "<group>"; };
 		76255D592D27083A006A4BB4 /* CityDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataAPI.swift; sourceTree = "<group>"; };
 		76255D5C2D2708A1006A4BB4 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		76255D5F2D270A52006A4BB4 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		76255D3C2D26F231006A4BB4 /* FP_UalaTests */ = {
 			isa = PBXGroup;
 			children = (
+				76255D5E2D270A45006A4BB4 /* Helpers */,
 				76255D562D26FCE0006A4BB4 /* CityDataTests.swift */,
 			);
 			path = FP_UalaTests;
@@ -141,6 +144,14 @@
 				76255D5C2D2708A1006A4BB4 /* City.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		76255D5E2D270A45006A4BB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				76255D5F2D270A52006A4BB4 /* URLSessionMock.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76255D602D270A52006A4BB4 /* URLSessionMock.swift in Sources */,
 				76255D572D26FCE0006A4BB4 /* CityDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
