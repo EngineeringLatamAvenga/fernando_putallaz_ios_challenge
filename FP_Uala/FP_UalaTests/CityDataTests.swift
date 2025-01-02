@@ -60,6 +60,26 @@ final class CityDataTests: XCTestCase {
         }
     }
     
+    func test_getCities_returnsBadHTTPResponse() async {
+        let url = makeCitiesURL()
+        let sut = makeSUT(url: url)
+        
+        let response = URLResponse(
+            url: URL(string: url)!,
+            mimeType: nil,
+            expectedContentLength: 0,
+            textEncodingName: nil
+        )
+        
+        URLSessionMock.mockResponse = (nil, response, nil)
+        
+        do {
+            _ = try await sut.loadCities()
+        } catch {
+            XCTAssertEqual(error as? URLError, URLError(.badServerResponse))
+        }
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(url: String) -> CityDataAPI {
