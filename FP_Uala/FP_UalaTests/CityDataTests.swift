@@ -28,6 +28,18 @@ final class CityDataTests: XCTestCase {
         XCTAssertEqual(cities.count, 2, "Expected count 2, received: \(cities.count)")
     }
     
+    func test_getCities_returnsBadURLError() async throws {
+        let wrongURL = "someBadURL"
+        let sut = makeSUT(url: wrongURL)
+        
+        do {
+            _ = try await sut.loadCities()
+            assertionFailure("Shouldn't succeed")
+        } catch {
+            XCTAssertEqual(error as? URLError, URLError(.badURL))
+        }
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(url: String) -> CityDataAPI {
