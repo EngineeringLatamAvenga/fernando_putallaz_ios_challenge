@@ -11,7 +11,7 @@
 		76255D2F2D26F230006A4BB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D2E2D26F230006A4BB4 /* ContentView.swift */; };
 		76255D312D26F231006A4BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76255D302D26F231006A4BB4 /* Assets.xcassets */; };
 		76255D342D26F231006A4BB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76255D332D26F231006A4BB4 /* Preview Assets.xcassets */; };
-		76255D3E2D26F231006A4BB4 /* FP_UalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D3D2D26F231006A4BB4 /* FP_UalaTests.swift */; };
+		76255D572D26FCE0006A4BB4 /* CityDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76255D562D26FCE0006A4BB4 /* CityDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		76255D302D26F231006A4BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76255D332D26F231006A4BB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76255D392D26F231006A4BB4 /* FP_UalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FP_UalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76255D3D2D26F231006A4BB4 /* FP_UalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FP_UalaTests.swift; sourceTree = "<group>"; };
 		76255D432D26F231006A4BB4 /* FP_UalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FP_UalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76255D562D26FCE0006A4BB4 /* CityDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		76255D3C2D26F231006A4BB4 /* FP_UalaTests */ = {
 			isa = PBXGroup;
 			children = (
-				76255D3D2D26F231006A4BB4 /* FP_UalaTests.swift */,
+				76255D562D26FCE0006A4BB4 /* CityDataTests.swift */,
 			);
 			path = FP_UalaTests;
 			sourceTree = "<group>";
@@ -192,6 +192,7 @@
 					};
 					76255D382D26F231006A4BB4 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 76255D282D26F230006A4BB4;
 					};
 					76255D422D26F231006A4BB4 = {
@@ -260,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76255D3E2D26F231006A4BB4 /* FP_UalaTests.swift in Sources */,
+				76255D572D26FCE0006A4BB4 /* CityDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +470,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F342975UV4;
@@ -478,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferhedio.FP-UalaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FP_Uala.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FP_Uala";
@@ -489,6 +492,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F342975UV4;
